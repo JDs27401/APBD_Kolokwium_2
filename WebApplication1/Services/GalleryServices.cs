@@ -32,9 +32,9 @@ public class GalleryServices : IGalleryServices {
                                             Title = a.Title,
                                         })
                             }
-                        ).ToList();
+                        ).ToList()
                 }
-            );
-        
+            ).ToListAsync();
+        return result;
     } 
 }
